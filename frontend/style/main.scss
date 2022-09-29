@@ -107,6 +107,7 @@ h2::before {
 }
 .main {
   overflow: hidden;
+  z-index: 10;
 }
 .main_first {
   animation: 0.5s ease-out 0s 1 moveright;
