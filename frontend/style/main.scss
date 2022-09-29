@@ -482,7 +482,6 @@ h2::before {
 #spinner {
   animation: spin 1s linear infinite;
   color: $primary-back-col;
-  z-index: -1;
 }
 
 @keyframes spin {

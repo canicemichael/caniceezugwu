@@ -96,9 +96,11 @@
       const changedisplay = document.getElementById("nodisplay");
       const boddy = document.querySelector(".boddy");
       const boddy2 = document.querySelector(".boddy2");
+      const spinner = document.getElementById("spinner");
 
       setTimeout(() => {
         boddy2.style.display = "none";
+        spinner.style.display = "none";
         create.style.zIndex = "-10";
         changedisplay.style.display = "block";
         // boddy.style.display = "block";
