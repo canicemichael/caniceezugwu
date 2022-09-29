@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home || Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../style/main.min.css">
+    <link rel="stylesheet" href="../style/navbar.min.css">
+
+    <script src="../scripts/index.js" defer></script>
+</head>
+<body class="boddy">
+    <div class="boddy2">
+        <h2 data-text="Creative..." id="creative">Creative...</h2>
+    </div>
+    <div id="nodisplay">
+        <section class="container_first">
+            <header class="header">
+                <div class="header_cont_one">
+                    <div class="header_item name"><a class="navv_links" href="./index.html" id="activeMenu">Canice Ezugwu</a></div>
+                    <div class="header_item ambassador">Currently an Ambassador for Zuri team</div>
+                </div>
+
+                <div class="header_item navv">
+                    <a class="navv_links" href="./work.html">Work</a>
+                    <a class="navv_links" href="./about.html">About</a>
+                    <a class="navv_links" href="./contact.html">Contact</a>
+                </div>
+            </header>
+            <main class="main">
+                <div class="main_first">
+                    <p class="bold_text">creative</p>
+                    <p class="bold_text">developer</p>
+                </div>
+                <div class="main_second">
+                    <div>
+                        <img class="profile_pic" src="../assets/1541607220736.jpg" alt="dev profile pic">
+                    </div>
+                    <div></div>
+                </div>
+                <div class="main_third">
+                    <div class="main_third_one">
+                        <div class="down_arrow" onclick="window.open('contact.html','mywindow');">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                        <div class="small_desc">
+                            <p>I TEACH & SUPPORT DEVS IN MY COMMUNITY</p>
+                        </div>
+                    </div>
+                    <div class="main_third_two">
+                        <p class="bold_text main_third_two--1">canice</p>
+                        <p class="bold_text main_third_two--2">ezugwu</p>
+                    </div>
+                </div>
+            </main>
+            <div class="inline"> 
+                <p class="spinner" id="spinner"><i class="fa fa-spinner fa-5x"></i></p>
+        </div>
+        </section>
+    </div>
+
+    <script>
+        const create = document.getElementById("creative");
+        const changedisplay = document.getElementById("nodisplay");
+        const boddy = document.querySelector('.boddy');
+        const boddy2 = document.querySelector('.boddy2');
+
+        setTimeout(() => {
+            boddy2.style.display = "none";
+            create.style.zIndex = "-10";
+            changedisplay.style.display = "block";
+            // boddy.style.display = "block";
+        }, 1500);
+    </script>
+    
+</body>
+</html>

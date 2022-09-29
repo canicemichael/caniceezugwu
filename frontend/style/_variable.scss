@@ -1,0 +1,39 @@
+/*Primary color*/
+
+$primary-back-col: #222327;
+$primary-back-col2: #e0dfdd;
+
+/*Neutral color*/
+
+$nav-text-col: #403e3f;
+$complement-one: #181D29;
+$complement-two: #010204;
+$complement-three: #283550;
+$complement-four: #45484C;
+$complement-five: rgb(197, 128, 37);
+$complement-six: #adb2b4;
+
+$medium_screen: 960px;
+$medium_screenm: 1200px;
+$medium_screenl: 1300px;
+
+@mixin large {
+  @media (min-width: $large_screen) {
+    @content;
+  }
+}
+@mixin medium {
+  @media (min-width: $medium_screen) {
+    @content;
+  }
+}
+@mixin mmedium {
+  @media (min-width: $medium_screenm) {
+    @content;
+  }
+}
+@mixin lmedium {
+  @media (min-width: $medium_screenl) {
+    @content;
+  }
+}
